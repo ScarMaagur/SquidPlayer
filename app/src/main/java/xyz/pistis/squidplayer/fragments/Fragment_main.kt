@@ -1,6 +1,5 @@
-package xyz.pistis.squidplayer
+package xyz.pistis.squidplayer.fragments
 
-import android.Manifest
 import android.content.pm.PackageManager
 import android.database.Cursor
 import android.net.Uri
@@ -11,14 +10,18 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.loader.app.LoaderManager
-import androidx.loader.content.CursorLoader
-import androidx.loader.content.Loader
+import xyz.pistis.squidplayer.AudioListAdapter
+import xyz.pistis.squidplayer.MusicManager
+import xyz.pistis.squidplayer.OnSongClickListener
+import xyz.pistis.squidplayer.R
+import android.Manifest
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_main.*
+import androidx.loader.content.CursorLoader
+import androidx.loader.content.Loader
 
-class MainFragment : Fragment(R.layout.fragment_main), LoaderManager.LoaderCallbacks<Cursor>,
+class Fragment_main : Fragment(R.layout.fragment_main), LoaderManager.LoaderCallbacks<Cursor>,
     OnSongClickListener {
-
     private val PERMISSIONS_REQUEST_READ_STORAGE: Int = 1200
 
 
