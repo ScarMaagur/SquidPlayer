@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SquidPlayer</string>
+
+    <string name="imageDesc.1">audioImage</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    //test strings
+
+    <string name="test">test</string>
+</resources>
